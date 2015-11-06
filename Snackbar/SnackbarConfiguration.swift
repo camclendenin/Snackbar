@@ -21,8 +21,8 @@ struct SnackbarConfiguration {
     return SnackbarConfiguration(
       backgroundColor: UIColor(white: 0.9, alpha: 1),
       foregroundColor: UIColor(white: 0.3, alpha: 1),
-      headerFont: UIFont.systemFontOfSize(19),
-      subHeaderFont: UIFont.systemFontOfSize(15),
+      headerFont: UIFont(name: "HelveticaNeue", size: 18),
+      subHeaderFont: UIFont(name: "HelveticaNeue", size: 14),
       presentationAnimationDuration: 0.2,
       dismissalAnimationDelay: 2.0
     )
