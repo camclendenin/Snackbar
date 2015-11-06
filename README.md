@@ -11,6 +11,14 @@ Without blocking the main UI:
 * Display an error *title* and *message* with animation as well as a customizable retry action
 * Display a success / confirmation *title* and *message* with animation, and then auto-hide
 
+### Installation ###
+
+To install via Cocoapods
+
+```sh
+pod 'Snackbar', '~> 0.1.0'
+```
+
 ### Usage ###
 
 ```swift
