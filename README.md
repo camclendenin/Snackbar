@@ -5,11 +5,11 @@ A handy Swift toolbar-like widget for quickly displaying status updates and erro
 ![Snackbar demo](http://i.giphy.com/I4Ulxm3RU1vVu.gif)
 ### What can Snackbar do? ###
 
-Without blocking the main UI:
+Asynchronously displays...
 
-* Display a status *title* and *message* with animation 
-* Display an error *title* and *message* with animation as well as a customizable retry action
-* Display a success / confirmation *title* and *message* with animation, and then auto-hide
+* a status *title* and *message* with animation 
+* an error *title* and *message* with animation as well as a customizable retry action
+* a success / confirmation *title* and *message* with animation, and then auto-hide
 
 ### Installation ###
 
@@ -38,6 +38,26 @@ snackbar.updateWithError("Error",
      // fetchData()
   })
 )
+```
+
+#### Customizing the appearance ####
+
+`Snackbar` can be initialized with a customized `SnackbarConfiguration` instance. The following attributes can be customized via the `SnackbarConfiguration`.
+
+- `backgroundColor`
+- `foregroundColor`
+- `headerFont` - First line of text
+- `subHeaderFont` - Second line of text
+- `presentationAnimationDuration`
+- `dismissalAnimationDelay` - Length of time that status updates will remain on screen before dismissing. Default is 2 seconds.
+
+Initialize the configuration and pass it as the `configuration` parameter when initializing the `Snackbar`.
+```swift
+let configuration = SnackbarConfiguration(
+  backgroundColor: UIColor.whiteColor(),
+  foregroundColor: ...
+)
+let customizedSnackbar = Snackbar(configuration: configuration)
 ```
 
 ### Requirements ###
