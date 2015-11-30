@@ -1,5 +1,7 @@
 # Snackbar #
 
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Snackbar.svg)](https://img.shields.io/cocoapods/v/Snackbar.svg)
+
 A handy Swift toolbar-like widget for quickly displaying status updates and errors at the bottom of the screen. See the [Android snackbar](https://www.google.com/design/spec/components/snackbars-toasts.html), which this is named after.
 
 ![Snackbar demo](http://i.giphy.com/I4Ulxm3RU1vVu.gif)
